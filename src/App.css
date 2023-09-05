@@ -1,0 +1,101 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+:root {
+  --main: #f2f2f2;
+  --primary: #e3e3e354;
+  --secondary: #d7d7d7;
+  --dark: #000000;
+  --shadow: #6363634d;
+  --placeholder: rgba(0, 0, 0, 0.2);
+}
+/* .dark {
+  --main: #313131; 
+  --primary: #414141;
+  --secondary: #525252;
+  --dark: #ffffff80;
+  --shadow: #202020a1;
+  --placeholder: rgba(242, 242, 242, 0.2);
+} */
+
+.dark {
+  --main: #0d151f;
+  --primary: #0e1b25;
+  --secondary: #182a3a;
+  --dark: #ffffff80;
+  --shadow: #070c119f;
+  --placeholder: rgba(242, 242, 242, 0.2);
+}
+.App {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  min-height: 1600px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 1.1rem;
+  background-color: var(--main);
+  color: var(--dark);
+}
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.color-mode-btn {
+  margin: 3% 0%;
+  cursor: pointer;
+}
+.MuiSvgIcon-root {
+  transition: 0.3s all linear !important;
+}

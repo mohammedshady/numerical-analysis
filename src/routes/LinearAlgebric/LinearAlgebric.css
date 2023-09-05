@@ -1,0 +1,266 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+.main-section {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.result-container {
+  margin-bottom: 200px;
+}
+.method-form {
+  animation: scale-in-hor-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.size-input {
+  max-width: 60px;
+}
+.step-desc-text {
+  margin: 0px;
+  font-weight: 500;
+}
+.result-container-section {
+  margin: 5% 0px;
+  /* border-bottom: 1px solid black; */
+}
+.result-container-section::after {
+  content: "";
+  border-bottom: 2px solid var(--dark);
+  width: 450px;
+  margin: 25px auto;
+  display: block;
+}
+.solver-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.step-matrix {
+  margin: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-matrix-row {
+  /* display: flex; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.matrix-numbers {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* set the number of columns */
+  grid-auto-rows: minmax(35px, auto); /* set the row height */
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+.matrix-3-numbers {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* set the number of columns */
+  grid-auto-rows: minmax(35px, auto); /* set the row height */
+  gap: 10px;
+  width: 100%;
+  align-items: center;
+}
+.matrix-1-cell {
+  font-size: 1em;
+  margin: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bracket-container {
+  color: var(--dark);
+  display: flex;
+  flex-direction: column;
+}
+.dash {
+  width: 9px;
+  height: 3px;
+  background-color: var(--dark);
+}
+.line {
+  background-color: var(--dark);
+  width: 3px;
+  height: 112px;
+}
+.align-self-end {
+  align-self: flex-end;
+}
+.matrix-cell {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.step-label {
+  text-align: left;
+  font-size: 1rem;
+  margin: 10px 0px;
+  letter-spacing: 0px;
+}
+.step-equation {
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.step-header-text {
+  letter-spacing: 1px;
+  margin: 20px;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.step-footer-text {
+  letter-spacing: 1px;
+  margin: 15px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+.steps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.equation-right-result {
+  font-weight: 500;
+}
+.equation-left {
+  margin: 0px 8px;
+}
+.result {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.functions-result,
+.values-result {
+  font-weight: 600;
+}
+.functions-result div,
+.values-result div {
+  text-align: right;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  margin: 10px;
+  font-weight: 300;
+}
+.m-guass-result {
+  border: 1px solid var(--dark);
+  padding: 10px;
+  justify-self: center;
+  max-width: fit-content;
+  margin: 15px auto;
+}
+.values-result {
+  padding: 10px;
+  text-align: center !important;
+  border: 1px solid var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: right;
+  /* box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px; */
+}
+.functions-result .result-equations {
+  /* place results in  a container */
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+}
+.cr-functions-result p {
+  margin: 19px;
+  font-weight: 600;
+}
+.fraction {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+.fraction .middle {
+  background-color: var(--dark);
+  width: 25px;
+  height: 1px;
+}
+.fraction .numerator,
+.fraction .denumerator {
+  margin: 0px !important;
+}
+.mat-result {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.cr-result {
+  margin: 20px;
+}
+.final-result {
+  font-weight: 600;
+}

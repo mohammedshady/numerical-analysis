@@ -1,0 +1,48 @@
+.matrix-form {
+  margin: 0px auto;
+}
+.matrix-input-container {
+  margin: 30px;
+}
+.matrix-input-container input::-webkit-outer-spin-button,
+.matrix-input-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.matrix-input {
+  margin: 6px;
+  font-size: 1rem;
+  max-width: 85px;
+  text-align: center;
+  height: 30px;
+  padding: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px var(--dark) solid;
+  background-color: var(--primary);
+  color: var(--dark);
+  box-shadow: var(--shadow) 0px 1px 4px 0px;
+}
+.matrix-input::placeholder {
+  color: var(--placeholder);
+  opacity: 1;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-self: center;
+  height: 30px;
+}
+.row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-input {
+  border-bottom: 1px red solid !important;
+  color: red;
+}

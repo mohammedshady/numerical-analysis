@@ -1,0 +1,7 @@
+.Mui-active {
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
+}
+.select-wrapper {
+  margin: 20px auto;
+  max-width: 300px;
+}

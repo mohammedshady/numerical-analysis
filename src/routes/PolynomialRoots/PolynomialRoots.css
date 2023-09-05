@@ -1,0 +1,157 @@
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+.main-section {
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.fun-input-container {
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+}
+.fun-input-container input {
+  font-size: 1.4rem;
+  text-align: center;
+  height: 30px;
+  margin-top: 30px;
+  padding: none;
+  outline: none;
+  border: none;
+  color: var(--dark);
+  border-bottom: 1px var(--dark) solid;
+  background-color: var(--primary);
+  box-shadow: var(--shadow) 0px 1px 4px 0px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.prps-input-container {
+  margin: 30px;
+  height: 72px;
+  display: flex;
+  justify-content: space-around;
+}
+.prps-input-container input {
+  font-size: 1rem;
+  max-width: 90px;
+  text-align: center;
+  height: 30px;
+  padding: none;
+  outline: none;
+  border: none;
+  color: var(--dark);
+  border-bottom: 1px var(--dark) solid;
+  background-color: var(--primary);
+  margin: 0px;
+  box-shadow: var(--shadow) 0px 1px 4px 0px;
+}
+.input-container-sm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s all linear;
+}
+.clickabke-label {
+  cursor: pointer;
+  user-select: none;
+}
+.error {
+  font-size: 0.7rem;
+  color: red;
+  letter-spacing: 0px;
+  margin: 0px;
+  animation: slide-in-top 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.error-input {
+  border-bottom: 1px red solid !important;
+}
+.submit-btn {
+  line-height: 1;
+  margin: 0px;
+  padding: 0.4em 0.9em;
+
+  background-color: var(--dark);
+  color: var(--main);
+  outline: none;
+  border: 1px solid var(--main);
+  font-size: 0.9rem;
+}
+.submit-btn:hover {
+  box-shadow: inset 0 -3.5em 0 0 var(--secondary);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.method-form {
+  animation: scale-in-hor-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.error-animation {
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+.poly-form {
+  width: 550px;
+  margin: 0 auto;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-self: center;
+  height: 30px;
+}
