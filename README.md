@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Numerical Analysis Toolbox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Numerical Analysis Toolbox is a React web application designed to help you solve mathematical problems using a collection of numerical methods. Whether you need to calculate polynomial roots or perform linear algebraic operations, this toolbox has you covered. It's a versatile tool for students, educators, and professionals working with numerical computations.
 
-## Available Scripts
+![light](https://i.imgur.com/vkZhds6.png "PolynomialRootImg")
+![dark](https://i.imgur.com/GpBlwu3.png "PolynomialRootImg")
 
-In the project directory, you can run:
+## Features:
 
-### `npm start`
+- User-friendly web interface.
+- Accurate and efficient numerical methods.
+- Support for both polynomial and linear algebraic calculations.
+- Interactive visualizations to aid understanding.
+- Easily accessible from any web browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Numerical Methods
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Polynomial methods
+  - Bisection
+  - False Position
+  - Fixed-Point
+  - Newton's
+  - Secant
+- Linear algebric methods
+  - Gauss Elimination
+  - LU Decomposition
+  - Cramers Rule
+  - Gauss Jordan
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine using `git clone `.
+2. Navigate to the project directory using `cd numerical-analysis-toolbox`.
+3. Install the required dependencies using `npm install`.
+4. Start the React development server using `npm start`.
+5. Access the application in your web browser at `http://localhost:3000`
 
-### `npm run build`
+## Future Updates
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We're committed to improving the Numerical Analysis Toolbox to make it even more powerful and user-friendly. Here are some of the planned updates and enhancements:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Better Calculation Handling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] Implement advanced algorithms to enhance the accuracy and speed of calculations.
+- [ ] Add support for handling more complex mathematical functions.
+- [ ] Optimize memory usage for large datasets.
 
-### `npm run eject`
+### Improved Results UI
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [ ] Redesign the results interface for better clarity and visualization.
+- [ ] Provide detailed explanations and insights into calculation results.
+- [ ] Customize result presentation based on user preferences.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Additional Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- [ ] Expand the toolbox with additional numerical methods and mathematical tools.
+- [ ] Integrate export options to save and share results conveniently.
+- [ ] Develop a mobile-friendly version for on-the-go calculations.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Authors
 
-## Learn More
+- **Mohammed Shady** - _GitHub Profile_:[mohammedshady](https://github.com/mohammedshady) | _Email_:mohatech777@gmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you encounter any issues while using the Numerical Analysis Toolbox or have suggestions for improvements, please don't hesitate to reach out via email. Your feedback is valuable and helps us make this toolbox better for everyone.
