@@ -29,7 +29,7 @@ The Numerical Analysis Toolbox is a React web application designed to help you s
 
 ## Getting Started
 
-1. Clone the repository to your local machine using `git clone`.
+1. Clone the repository to your local machine using `git clone https://github.com/mohammedshady/numerical-analysis-toolbox.git`.
 2. Navigate to the project directory using `cd numerical-analysis-toolbox`.
 3. Install the required dependencies using `npm install`.
 4. Start the React development server using `npm start`.
